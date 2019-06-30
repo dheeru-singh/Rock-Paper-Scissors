@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css"/>
+	
+</head>
+<body>
+<!-- container for the whole page -->
+<div class="container">
+  <!-- rps-start-section for the landing page -->
+  <div class="text-center">
+    <h1>Welcome to Bootstrap RPS</h1>
+  </div>
+  <div id="rps-start-section">
+    
+    <div class="box-section">
+      <h2>Rules:</h2>
+      <ul>
+          <li>Rock: wins against <strong>SCISSORS</strong>, losses to <strong>PAPER</strong></li>
+          <li>Paper: wins against <strong>ROCK</strong>, losses to <strong>SCISSORS</strong></li>
+          <li>Scissors: wins against <strong>PAPER</strong>, losses to <strong>ROCK</strong></li>
+      </ul>
+      <div class="text-center">
+        <button type="button" class="btn button-start" id="get-started">Press R, P, or S to get started!</button>
+      </div>
+     
+    </div>
+  </div>
+
+  <!--Game board view  -->
+<div class="box-section" id="rps-card-group">
+<div class="card-group" >
+    <!--card 1-->
+    <div class="card">
+        <h2>User Choice:</h2>
+        <hr>
+        <img src="assets/images/default.png" alt="RPS Images" class="card-img-top" id="user-image">
+    </div>
+    <!--card 2-->
+    <div class="card">
+        <h2>Current Score:</h2>
+        <hr>
+        <p>Wins <strong><span id="winCount"></span> </strong></p>
+        <p>Losses<strong> <span id="lossCount"></span> </strong></p>
+        <p>Ties<strong>  <span id="tieCount"></span></strong></p>
+        <button type="button" class="btn btn-danger" id="reset-button">Reset Score</button>
+        <hr>
+    </div>
+    <!--card 3-->
+    <div class="card">
+        <h2>Computer Choice:</h2>
+        <hr>
+        <img src="assets/images/default.png" alt="RPS Images" class="card-img-top" id="computer-image">
+    </div>
+
+</div>
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+<script src="assets/js/rps.js"></script>
+</body>
+</html>

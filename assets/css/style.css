@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    font-family: 'Hammersmith One', sans-serif;
+    background: url(../images/bg.png);
+    background-color: #000;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size:80px; 
+}
+.box-section{
+    padding: 3rem;
+    background-color: #fff;
+    background-image:url(../images/vector-bg.jpg);
+    min-height: 400px;
+    box-shadow: 1px 2px 30.5px #000;
+    margin: 2rem auto;   
+  
+    width: 100%;
+}
+.box-section h2, .box-section span,.box-section strong{
+    color: #1f585f;
+}
+.card-img-top{
+    width: 60%;
+    margin: 0 auto;
+}
+.card-group>.card{
+    background-color: rgba(255, 255, 255, 0.63);
+}
+h1{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 3em;
+    border-bottom: 1px dashed;
+    display: inline-block;
+    padding: 15px 0px;
+    margin-top: 25px;
+}
+#rps-start-section ul li {
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+}
+.button-start{
+    border-radius: 0;
+    background-color: #1f585f;
+    background-image: url(../images/bg.png);
+    background-size: 70px;
+    border: 1px solid #1f585f;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+}
+.button-start:hover{
+    color:#fff;
+}
+#reset-button{
+    border-radius: 0;
+    background-image: url(../images/danger-bg.png);
+    background-size: 70px;
+}
+#rps-card-group{
+    display: none;
+    text-align: center;
+}
+.card{
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+}
